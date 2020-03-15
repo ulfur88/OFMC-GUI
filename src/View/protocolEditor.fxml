@@ -1,0 +1,24 @@
+<!--
+/*
+ * BSD License
+ *
+ * Open Source Fixedpoint Model-Checker Graphical User Interface version 2019
+ *
+ * (C) Copyright �lfur J�hann Edvardsson 2019
+ * (C) Copyright Veronica Julie Lodskov Hoffmann 2019
+ *
+ * All Rights Reserved.
+ *
+*/-->
+
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<?import org.fxmisc.richtext.CodeArea?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.ProtocolEditor">
+    <VirtualizedScrollPane>
+        <content>
+            <CodeArea fx:id="protocolCodeArea"/>
+        </content>
+    </VirtualizedScrollPane>
+</StackPane>

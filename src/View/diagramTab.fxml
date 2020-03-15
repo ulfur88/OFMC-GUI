@@ -1,0 +1,59 @@
+<!--
+/*
+ * BSD License
+ *
+ * Open Source Fixedpoint Model-Checker Graphical User Interface version 2019
+ *
+ * (C) Copyright Ulfur Johann Edvardsson 2019
+ * (C) Copyright Veronica Julie Lodskov Hoffmann 2019
+ *
+ * All Rights Reserved.
+ *
+*/-->
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.DiagramTab" id="diagramTab">
+
+    <top>
+        <HBox styleClass="second-menu">
+
+            <Label text="Diagram Filter:" />
+
+            <Group>
+                <HBox fx:id="diagramFilter" id="filter">
+                    <CheckBox selected="true" text="Steps" />
+                    <CheckBox selected="true" text="Actions" />
+                </HBox>
+            </Group>
+
+            <Button onAction="#applyFilter" text="Apply" />
+
+        </HBox>
+    </top>
+
+    <center>
+
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <BorderPane>
+
+                <top>
+                    <HBox fx:id="diagramAgents" alignment="CENTER">
+                        <Label text="Nothing to show" id="step"/>
+                    </HBox>
+                </top>
+
+                <center>
+                    <StackPane fx:id="diagramActions" alignment="TOP_CENTER">
+                        <HBox id="diagramHLine"/>
+                        <VBox id="diagramActionBox"/>
+                    </StackPane>
+                </center>
+
+            </BorderPane>
+        </ScrollPane>
+    </center>
+
+</BorderPane>
