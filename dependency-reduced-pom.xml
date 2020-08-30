@@ -6,6 +6,14 @@
   <version>1.2</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>Resources</directory>
+      </resource>
+      <resource>
+        <directory>View</directory>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -62,7 +70,7 @@
     </repository>
   </repositories>
   <properties>
-    <java.version>11</java.version>
+    <java.version>13</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
