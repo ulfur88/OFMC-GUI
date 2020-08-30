@@ -147,7 +147,6 @@ public class AnalyseProtocol {
 		String output = "";
 		for (String a : originalAnalysis) output = output + a + "\n";
 		if (output.equals("")) return false;
-		System.out.println(output);
 		pp.setType("a");
 		pp.parse(output);
 		return true;
