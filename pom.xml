@@ -21,6 +21,14 @@
 	</repositories>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>Resources</directory>
+			</resource>
+			<resource>
+				<directory>View</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
