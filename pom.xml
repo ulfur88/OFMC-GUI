@@ -7,7 +7,7 @@
 	<version>1.2</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
+		<java.version>13</java.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -21,6 +21,14 @@
 	</repositories>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>Resources</directory>
+			</resource>
+			<resource>
+				<directory>View</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
