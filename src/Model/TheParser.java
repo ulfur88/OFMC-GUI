@@ -78,8 +78,6 @@ public class TheParser {
 			syntaxError = false;
 		} catch (Exception e) {
 			this.syntaxError = true;
-			System.out.println(e.toString());
-			e.printStackTrace();
 		}
 	}
 

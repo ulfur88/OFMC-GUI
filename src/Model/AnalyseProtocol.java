@@ -3,7 +3,7 @@
  *
  * Open Source Fixedpoint Model-Checker Graphical User Interface version 2019
  *
- * (C) Copyright Úlfur Jóhann Edvardsson 2019
+ * (C) Copyright ï¿½lfur Jï¿½hann Edvardsson 2019
  * (C) Copyright Veronica Julie Lodskov Hoffmann 2019
  *
  * All Rights Reserved.
@@ -72,9 +72,13 @@ public class AnalyseProtocol {
 				p.waitFor();
 			}
 
-			read();
+			if(!read()) {
+				pp.syntaxError = true;
+				throw new Exception();
+			}
 			analysis.deleteOnExit();
 		} catch (Exception e) {
+			
 			if (pp.syntaxError) {
 				try {
 					PrintWriter writer;
@@ -131,7 +135,7 @@ public class AnalyseProtocol {
 	}
 
 	// read output of ofmc and send to the parser
-	private void read() {
+	private boolean read() {
 		originalAnalysis = new ArrayList<String>();
 		try {
 			Scanner s = new Scanner(analysis);
@@ -142,8 +146,11 @@ public class AnalyseProtocol {
 		}
 		String output = "";
 		for (String a : originalAnalysis) output = output + a + "\n";
+		if (output.equals("")) return false;
+		System.out.println(output);
 		pp.setType("a");
 		pp.parse(output);
+		return true;
 
 	}
 	

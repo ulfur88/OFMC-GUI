@@ -3,7 +3,7 @@
  *
  * Open Source Fixedpoint Model-Checker Graphical User Interface version 2019
  *
- * (C) Copyright Úlfur Jóhann Edvardsson 2019
+ * (C) Copyright ï¿½lfur Jï¿½hann Edvardsson 2019
  * (C) Copyright Veronica Julie Lodskov Hoffmann 2019
  *
  * All Rights Reserved.
@@ -68,7 +68,7 @@ public class Controller implements Initializable{
 	TabPane attackTabPane;
 
 	@FXML
-	Tab protocolEditorTab, simplifiedTab, simplifiedAttackTab, protocolDiagramTab, attackDiagramTab;
+	Tab protocolEditorTab, simplifiedTab, simplifiedAttackTab, protocolDiagramTab, attackDiagramTab, outputText;
 
 
 	@FXML private TextArea textRight;
@@ -158,12 +158,13 @@ public class Controller implements Initializable{
 
 		ap.run(protocolCodeArea.getText());
 
+		textRight.setText(ap.getAnalysis());
 		if (ap.getSyntaxError()) {
-			textRight.setText(ap.geterrormsg());
+			if (ap.getAnalysis().equals("")) textRight.setText(ap.geterrormsg());
+			attackTabPane.getSelectionModel().select(outputText);
 			return;
 		}
 		
-		textRight.setText(ap.getAnalysis());
 
 		// Initialize tabs in attack trace
 		attackDiagram.initData(this, false);
