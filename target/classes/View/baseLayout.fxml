@@ -67,7 +67,7 @@
             <TabPane fx:id="attackTabPane" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0">
                 <Tab closable="false" text="Diagram" fx:id="attackDiagramTab"/>
                 <Tab fx:id="simplifiedAttackTab" closable="false" text="Simplified"/>
-                <Tab closable="false" text="Text">
+                <Tab fx:id="outputText" closable="false" text="Text">
                     <TextArea fx:id="textRight" promptText="Text output" wrapText="true" />
                 </Tab>
             </TabPane>
