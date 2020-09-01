@@ -9,4 +9,4 @@ To get the latest version please check the [Releases](https://github.com/ulfur88
 
 ## Running
 First place the ofmc executable in the same folder as the *jar* file.  
-Then start the program by running `java -jar OFMCGUI-1.2.jar`
+Then start the program by double clicking or running the command `java -jar OFMCGUI-1.2.jar`
