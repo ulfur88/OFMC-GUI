@@ -35,7 +35,7 @@
                 <Button onAction="#handleConfigButtonAction" text="Configuration" />
                 <Button onAction="#handleAnalyseButtonAction" text="Analyse" fx:id="analyseBtn"/>
                 <Button fx:id="traceBtn" onAction="#handleTraceButtonAction" text="Trace" />
-                <Label text="Version 1.2"/>
+                <Label text="Version 1.2.1"/>
             </HBox>
 
             <HBox alignment="CENTER" maxWidth="Infinity" GridPane.columnIndex="1">
