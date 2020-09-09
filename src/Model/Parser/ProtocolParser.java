@@ -240,6 +240,11 @@ public class ProtocolParser {
 		}
 		
 		@Override
+		public AST visitGuessablesecretbetween(pparserParser.GuessablesecretbetweenContext ctx) {
+			return new Secret((Message) visit(ctx.mes), (Ws) visit(ctx.fun), true);
+		}
+		
+		@Override
 		public AST visitSecretbetween (pparserParser.SecretbetweenContext ctx) {
 			return new Secret((Message) visit(ctx.mes), (Ws) visit(ctx.fun));
 		}

@@ -1,5 +1,4 @@
 package Model.Parser;
-
 // Generated from pparser.g4 by ANTLR 4.7.1
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -283,6 +282,13 @@ public interface pparserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitArrowmsg(pparserParser.ArrowmsgContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code guessablesecretbetween}
+	 * labeled alternative in {@link pparserParser#g}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGuessablesecretbetween(pparserParser.GuessablesecretbetweenContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code typesoptsemi}
 	 * labeled alternative in {@link pparserParser#whattype}.
