@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This repository has been archived
+
 # OFMC-GUI
 This is a graphical user interface for OFMC
 

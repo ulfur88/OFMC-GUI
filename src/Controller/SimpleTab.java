@@ -3,7 +3,7 @@
  *
  * Open Source Fixedpoint Model-Checker Graphical User Interface version 2019
  *
- * (C) Copyright Úlfur Jóhann Edvardsson 2019
+ * (C) Copyright Ãšlfur JÃ³hann Edvardsson 2019
  * (C) Copyright Veronica Julie Lodskov Hoffmann 2019
  *
  * All Rights Reserved.
